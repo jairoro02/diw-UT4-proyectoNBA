@@ -1,0 +1,133 @@
+.player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 969px;
+    padding-top: 3.7%;
+    background-color: #1D559E;
+    .img{
+        height: 100%;
+        padding-top: 3.73%;
+        padding-left: 8%;
+    }
+    .fondo{
+        background-image: url(/src/assests/images/fondoprueba2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 80%;
+        .info{
+            background-color: rgba(58, 58, 58, 0.267);
+            border: solid white 1px;
+            color: white;
+            border-radius: 10%;
+            width: 50%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 20%;
+            margin-top: 12%;
+            .importante{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 20%;
+                font-family: $fuentetexto;
+            }
+            .bio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: $fuentetexto;
+                .titulo{
+                    align-items: center;
+                }
+                .par{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1350px){
+    .player{
+        height: 2000px;
+        flex-direction: column;
+        transition: all 600ms;
+        .img{
+            margin-left: 25%;
+            width: 450px;
+            height: 40%;
+            transition: all 600ms;
+
+        }
+        .fondo{
+            height: 70%;
+            align-items: center;
+            transition: all 600ms;
+            .info{
+                width: 60%;
+                transition: all 600ms;
+                .importante{
+                    font-size: 15px;
+                    transition: all 600ms;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:715px){
+    .player{
+        height: 1500px;
+        transition: all 600ms;
+        .img{
+            margin-top: 10%;
+            margin-left: 8%;
+            height: 40%;
+            transition: all 600ms;
+
+        }
+        .fondo{
+            background-size: 90%;
+            height: 800px;
+            transition: all 600ms;
+            .info{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0;
+                transition: all 600ms;
+            }
+        }
+    }
+}
+
+@media (max-width:488px){
+    .player{
+        .img{
+            margin-top: 10%;
+            margin-left: -2%;
+            height: 35%;
+            width: 350px;
+            transition: all 600ms;
+
+        }
+        .fondo{
+
+            .info{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0;
+                transition: all 600ms;
+                .bio{
+                    .par{
+                        width: 70%;
+                        transition: all 600ms;
+                    }
+                }
+            }
+        }
+    }
+}

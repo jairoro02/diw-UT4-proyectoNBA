@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/sass/main.scss">
+    <title>Golden State Warriors</title>
+</head>
+<body class="warriors">
+    <div class="contenedor" id="iniciosesion">
+        <div class="popup">
+            <img src="./assests/images/siluetas/inicio.png" class="img">
+            <h1>Inicio de sesión</h1>
+            <form action="">
+                <label for="Nombre">Nombre de usuario</label>
+                <input type="text">
+                <label for="Contraseña">Contraseña</label>
+                <input type="text">
+            </form>
+            <a class="enviar" href="#">Enviar</a>
+            <p>¿No tienes cuenta?<a href="#registro">Pulsa aquí</a></p>
+        </div>
+    </div>
+    <div class="contenedor" id="registro">
+        <div class="popup">
+            <img src="./assests/images/siluetas/registro.png" class="img">
+            <h1>Registro de usuario</h1>
+            <form action="">
+                <label for="Nombre">Nombre de usuario</label>
+                <input type="text">
+                <label for="Contraseña">Contraseña</label>
+                <input type="text">
+                <label for="repita">Repita contraseña</label>
+                <input type="text">
+            </form>
+            <a class="enviar" href="#">Enviar</a>
+        </div>
+    </div>
+    <header class="cabecera">
+        <a href="index.html" class="logo"><img src="./assests/images/nbalogo.png"></a>
+        <div class="opciones">
+            
+            <nav class="navegacion">
+                <a href="./equipos.html">Equipos</a>
+                <a href="./contacto.html">Contacto</a>
+                
+            </nav>
+        </div>
+        <div class="boton"><a class="inicio-sesion" href="#iniciosesion">Iniciar sesión</a></div>
+        <div class="boton"><a class="user" href="#iniciosesion"><i class="fa-solid fa-user"></i></a></div>
+        <img src="./assests/images/pelota.png" class="pelota">
+    </header>
+    <div class="migas">
+        <h1><a href="equipos.html">Equipos</a> > Golden State Warriors</h1>
+    </div>
+    
+    <section class="jugadores">
+        <h1 class="titulo">Golden State Warriors</h1>
+        <div class="fila-jugadores">
+            <div class="par">
+                <a class="jugador" href="jugador.html"><img class="imagen" src="./assests/images/retratos/stephencurry.png"><p>Stephen Curry</p></a>
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/draymondgreen.png"><p>Draymon Green</p></a>
+            </div>
+            <div class="par">
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/jordanpoole.png"><p>Jordan Poole</p></a>
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/kleythompson.png"><p>Kley Thompson</p></a>
+            </div>
+        </div>
+        <div class="fila-jugadores">
+            <div class="par">
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/jameswiseman.png"><p>James Wiseman</p></a>
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/jonathan kuminga.png"><p>Jonathan Kuminga</p></a>
+            </div>
+            <div class="par">
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/andreiguaodala.png"><p>Andre Iguaodala</p></a>
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/mosesmoody.png"><p>Moses Moody</p></a>
+            </div>
+        </div>
+        <div class="fila-jugadores">
+            <div class="par">
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/kevon looney.png"><p>Kevon Looney</p></a>
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/andrewwiggins.png"><p>Andrew Wiggins</p></a>
+            </div>
+            <div class="par">
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/donte divicenzo.png"><p>Donte Divicenzo</p></a>
+                <a class="jugador"><img class="imagen" src="./assests/images/retratos/jamychal green.png"><p>Jamychal Green</p></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

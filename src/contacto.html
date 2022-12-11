@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/sass/main.scss">
+    <title>Contacto</title>
+</head>
+<body class="fondo">
+    <div class="contenedor" id="iniciosesion">
+        <div class="popup">
+            <img src="./assests/images/siluetas/inicio.png" class="img">
+            <h1>Inicio de sesión</h1>
+            <form action="">
+                <label for="Nombre">Nombre de usuario</label>
+                <input type="text">
+                <label for="Contraseña">Contraseña</label>
+                <input type="text">
+            </form>
+            <a class="enviar" href="#">Enviar</a>
+            <p>¿No tienes cuenta?<a href="#registro">Pulsa aquí</a></p>
+        </div>
+    </div>
+    <div class="contenedor" id="registro">
+        <div class="popup">
+            <img src="./assests/images/siluetas/registro.png" class="img">
+            <h1>Registro de usuario</h1>
+            <form action="">
+                <label for="Nombre">Nombre de usuario</label>
+                <input type="text">
+                <label for="Contraseña">Contraseña</label>
+                <input type="text">
+                <label for="repita">Repita contraseña</label>
+                <input type="text">
+            </form>
+            <a class="enviar" href="#">Enviar</a>
+        </div>
+    </div>
+    <header class="cabecera">
+        <a href="index.html" class="logo"><img src="./assests/images/nbalogo.png"></a>
+        <div class="opciones">
+            
+            <nav class="navegacion">
+                <a href="./equipos.html">Equipos</a>
+                <a href="./contacto.html">Contacto</a>
+                
+            </nav>
+        </div>
+        <div class="boton"><a class="inicio-sesion" href="#iniciosesion">Iniciar sesión</a></div>
+        <div class="boton"><a class="user" href="#iniciosesion"><i class="fa-solid fa-user"></i></a></div>
+        <img src="./assests/images/pelota.png" class="pelota">
+    </header>
+    <section class="informacion">
+        <div class="contactar">
+            <h1 class="titulo">Contacta directamente con la NBA</h1>
+            <article class="datos">
+                <h2><i class="fa-solid fa-phone"></i> Teléfono: 67845623</h2>
+                <h2><i class="fa-solid fa-envelope"></i> Email: realnba@esnba.es</h2>
+                <h2><i class="fa-brands fa-instagram"></i> Instagram: @nbaes</h2>
+            </article>
+        </div>
+        <div class="zonas">
+            <h2 >Sedes de la NBA:</h2>
+            <ul class="dentro">
+                <li><h2>Oklahoma</h2></li>
+                <li><h2>Madrid</h2></li>
+                <li><h2>New York</h2></li>
+                <li><h2>Los Angeles</h2></li>
+            </ul>
+        </div>
+        <button  class="boton"><a href="index.html">Volver al inicio</a></button>
+    </section>
+</body>
+</html>

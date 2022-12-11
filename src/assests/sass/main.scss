@@ -1,0 +1,41 @@
+@import 'utilities/variables';
+@import 'layout/header';
+@import 'base/reset';
+@import 'layout/inicio';
+@import 'layout/equipos';
+@import 'layout/jugadores.scss';
+@import 'layout/contacto.scss';
+@import 'layout/jugador';
+@import 'layout/iniciosesion';
+.migas{
+    text-align: center;
+    background-color: $colorprincipal;
+    width: 500px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    position: fixed;
+}
+
+.migas2{
+    text-align: center;
+    background-color: $colorprincipal;
+    width: 750px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    position: fixed;
+}
+
+@media(max-width:883px){
+    .migas{
+        font-size: 10px;
+        width: 360px;
+        transition: all 600ms;
+    }
+    .migas2{
+        font-size: 10px;
+        width: 360px;
+        transition: all 600ms;
+    }
+}

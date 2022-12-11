@@ -1,0 +1,206 @@
+.index{
+    background-color: $fondo;
+    transition: .3s ease all;
+    &.oscuro{
+        background: $colorprincipal;
+    }
+    .fondo{
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        background-image: url(/src/assests/images/portada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        background-position: center center;
+        transition: 600ms all;
+        .slider{
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            transition: 600ms all;
+            .noticia-slider{
+                color: white;
+                width: 40%;
+                transition: 600ms all;
+                .titulo{
+                    -webkit-text-stroke: 1px black;
+                    text-align: center;   
+                    font-family: $fuenteheader;
+                    font-size: 40px;
+                    transition: 600ms all;
+                }
+                .texto{
+                    -webkit-text-stroke: 0.5px black ;
+                    text-align: justify;
+                    font-family: $fuenteheader;
+                    transition: 600ms all;
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+    .noticias{
+        height: 800px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        transition: 600ms all;
+        .noticia{
+            align-items: center;
+            border: 1px solid white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: $colorprincipal;
+            color: white;
+            width: 1000px;
+            height: 200px;
+            transition: 600ms all;
+            .cajita{
+                width: 45%;
+                margin-left: -200px;
+                transition: 600ms all;
+            }
+            .foto{
+                width: 22%;
+                height: 70%;
+                margin-left: -40px;
+                transition: 600ms all;
+            }
+            .titulo{
+                padding: 4px;
+                text-align: justify;   
+                font-family: $fuenteheader;
+                font-size: 24px;
+                transition: 600ms all;
+            }
+            .texto{
+                text-align: justify;
+                font-family: $fuentetexto;
+                font-size: 20px;
+                transition: 600ms all;
+            }
+        }
+    }
+}
+@media (max-width:900px){
+    .index > .fondo > .slider{
+        margin-top: 280px;
+        transition: 600ms all;
+        .noticia-slider{
+            width: 100%;
+            transition: 600ms all;
+            
+            .titulo{
+                font-size: 34px;
+                transition: 600ms all;
+            }
+            .texto{
+                font-size: 18px;
+                transition: 600ms all;
+            }
+        }
+    }
+    .index > .fondo{
+        height: 400px;
+        transition: 600ms all;
+        transition: 600ms all;
+    }
+    .index > .noticias > .noticia{
+        transition: 600ms all;
+        width: 100%;
+        .cajita{
+            width: 60%;
+            margin-right: -10%;
+            transition: 600ms all;
+        }
+        .foto{
+            width: 192px;
+            height: 138px;
+            margin-left: -10%;
+            transition: 600ms all;
+        }
+        .titulo{
+            font-size: 22px;
+            transition: 600ms all;
+        }
+        .texto{
+            font-size: 17px;
+            transition: 600ms all;
+        }
+    }
+}
+
+@media (max-width:700px){
+    .index > .fondo > .slider {
+        transition: 600ms all;
+        .noticia-slider{
+            
+            .titulo{
+                font-size: 24px;
+            }
+            .texto{
+                font-size: 14px;
+            }
+        }
+    }
+    .index > .fondo{
+        height: 300px;
+        transition: 600ms all;
+    }
+    .index > .noticias > .noticia{
+        .cajita{
+            width: 50%;
+            margin-right: -10%;
+            transition: 600ms all;
+        }
+        .foto{
+            margin-left: -15%;
+            transition: 600ms all;
+        }
+        .titulo{
+            font-size: 22px;
+            transition: 600ms all;
+        }
+        .texto{
+            font-size: 17px;
+            transition: 600ms all;
+        }
+    }
+}
+
+@media (max-width:550px){
+    .index > .noticias{
+        height: 600px;
+        transition: 600ms all;
+      .noticia{
+            height: 150px;
+            transition: 600ms all;
+            .cajita{
+                width: 50%;
+                margin-right: -25%;
+                transition: 600ms all;
+            }
+            .foto{
+                height: 108px;
+                width: 162px;
+                margin-left: -27%;
+                transition: 600ms all;
+            }
+            .titulo{
+                font-size: 15px;
+                transition: 600ms all;
+            }
+            .texto{
+                font-size: 12px;
+                transition: 600ms all;
+            }
+        }
+    } 
+}
