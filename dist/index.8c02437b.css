@@ -498,6 +498,7 @@ a:link, a:visited, a:active {
   align-items: center;
   padding-left: 1%;
   padding-right: 1%;
+  transition: all .6s;
   display: flex;
 }
 
@@ -506,6 +507,7 @@ a:link, a:visited, a:active {
 }
 
 .seleccion-equipos .equipos .equipo:hover {
+  transition: all .6s;
   transform: scale(1.15);
 }
 
@@ -560,7 +562,9 @@ a:link, a:visited, a:active {
   background-size: 70%;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: -5%;
   padding: 2%;
+  transition: all .6s;
   display: flex;
 }
 
@@ -594,6 +598,7 @@ a:link, a:visited, a:active {
   justify-content: space-around;
   align-items: center;
   font-size: 35px;
+  transition: all .6s;
   display: flex;
 }
 
@@ -604,12 +609,14 @@ a:link, a:visited, a:active {
 }
 
 .jugadores .fila-jugadores .jugador:hover {
+  transition: all .6s;
   transform: scale(1.15);
 }
 
 @media (max-width: 1225px) {
   .jugadores {
     height: 1400px;
+    margin-top: -7%;
     transition: all .6s;
   }
 
@@ -1011,7 +1018,8 @@ a:link, a:visited, a:active {
   background-color: #184785;
   padding-top: 1%;
   padding-bottom: 1%;
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
 
 .migas2 {
