@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Error 404</title>
+    <style>@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #1d559e;
+}
+
+#imagen {
+  z-index: -1;
+  position: absolute;
+}
+
+.container {
+  width: 40%;
+  height: 20%;
+  text-align: center;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 2em 0;
+  animation: 3s ease-in-out infinite rotation;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+p {
+  color: #fff;
+  font-size: 26px;
+}
+
+a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+a:hover {
+  color: #888;
+  border-bottom-color: #888;
+}
+
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Error 404</h1>
+      <p>La página que buscas no ha sido encontrada.</p>
+      <a href="/index.html">Volver a la página principal</a>
+    </div>
+    <img id="imagen" src="/pelota.6cfc640a.png" width="20%">
+    <script>var imagen = document.getElementById("imagen");
+var x = 0;
+var y = 0;
+var xSpeed = 3;
+var ySpeed = 3;
+function mover() {
+    x += xSpeed;
+    y += ySpeed;
+    if (x + imagen.clientWidth > window.innerWidth || x < 0) xSpeed = -xSpeed;
+    if (y + imagen.clientHeight > window.innerHeight || y < 0) ySpeed = -ySpeed;
+    imagen.style.left = x + "px";
+    imagen.style.top = y + "px";
+    requestAnimationFrame(mover);
+}
+mover();
+
+</script>
+  <script src="/404.38950929.js"></script></body>
+</html>

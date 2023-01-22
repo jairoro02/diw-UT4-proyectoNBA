@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Error 404</title>
+    <style>
+      /* Estilos de la animación */
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      body{
+        background-color: #1D559E;;
+      }
+
+      #imagen {
+        position: absolute;
+        z-index: -1;
+        }
+
+      .container {
+        width: 40%;
+        height: 20%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2em 0;
+        animation: rotation 3s ease-in-out infinite;
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        z-index: 1;
+      }
+
+      h1 {
+        color: white;
+        font-size: 40px;
+      }
+
+      p {
+        color: white;
+        font-size: 26px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+        font-size: 18px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a:hover {
+        border-bottom-color: #888;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Error 404</h1>
+      <p>La página que buscas no ha sido encontrada.</p>
+      <a href="index.html">Volver a la página principal</a>
+    </div>
+    <img id="imagen" src="./assests/images/pelota.png" width="20%">
+    <script>
+        var imagen = document.getElementById("imagen");
+        var x = 0;
+        var y = 0;
+        var xSpeed = 3;
+        var ySpeed = 3;
+    
+        function mover() {
+          x += xSpeed;
+          y += ySpeed;
+    
+          if (x + imagen.clientWidth > window.innerWidth || x < 0) {
+            xSpeed = -xSpeed;
+          }
+    
+          if (y + imagen.clientHeight > window.innerHeight || y < 0) {
+            ySpeed = -ySpeed;
+          }
+    
+          imagen.style.left = x + "px";
+          imagen.style.top = y + "px";
+    
+          requestAnimationFrame(mover);
+        }
+    
+        mover();
+      </script>
+  </body>
+</html>
